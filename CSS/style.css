@@ -1,0 +1,93 @@
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+
+body{
+	margin: 200px 0;
+	height: 50px;
+}
+
+main{
+	background-image: url(../asset/img/windows_xp.jpg);
+	width: 100vw;
+	height: max-content;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+li, a, button 
+{
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color: #edf0f1;
+	text-decoration: none;
+}
+
+
+header
+{
+	bottom: 0;
+	width: 100vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:30px 10%;
+	background-color: aliceblue;
+	
+}
+
+.logo
+{
+	cursor: pointer;
+	color: #edf0f1;
+	font-weight: 900;
+	font-family: "Montserrat", sans-serif;;
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.nav_links
+{
+	list-style: none;
+}
+
+.nav_links li
+{
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+.nav_links li a , .logo
+{
+	transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover, .logo:hover
+{
+	color: #0088a9;
+}
+
+button
+{
+	padding: 9px 25px;
+	background-color: #0088a9;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s; 
+}
+
+button:hover
+{
+	background-color: #0088a9cc;
+}
+
+/* Peut s'arreter ici, le rendu est deja excellent !*/
