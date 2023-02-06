@@ -1,7 +1,7 @@
 /*=============== SERVICES MODAL ===============*/
 const modalViews = document.querySelectorAll('.window__modal'),
 	  modalBtns = document.querySelectorAll('.link__title'),
-	  modalCloses = document.querySelectorAll('.window__xp-files-button--close')
+	  modalCloses = document.querySelectorAll('.window__button-close')
 
 let modal = function(modalClick){
 	modalViews[modalClick].classList.add('active-modal')
