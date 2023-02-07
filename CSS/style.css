@@ -12,9 +12,9 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
-	display: flex;
+	/* display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: center; */
 }
 
 /* /* Style the desktop window 
@@ -88,6 +88,19 @@ body {
 }
 
 
+
+
+
+/* temporaire */
+/* .test{
+	opacity: 1;
+	visibility: visible;
+} */
+/* --------- */
+
+
+/* Window default */
+
 .window__modal{
 	position: fixed;
 	top: 0;
@@ -111,17 +124,6 @@ body {
 	visibility: visible;
 }
 
-
-
-/* temporaire */
-/* .window__xp-files{
-	opacity: 1;
-	visibility: visible;
-} */
-/* --------- */
-
-
-/* Window default */
 .window__content{
 	position: relative;
 	box-shadow: 10px 10px 2px rgba(33, 33, 33, 0.587);
@@ -199,3 +201,62 @@ body {
 	height: 100%;
 	box-shadow: 2px 0px 5px rgb(87, 87, 87);
 }
+
+
+
+
+/* Desktop */
+
+.desktop__list{
+	list-style-type: none;
+	display: grid;
+	grid-template-areas: "Video . . . ."
+						 "Opera . . . ."
+						 "LoL . readMe . ."
+						 "Crown . . . .";
+	grid-gap: 1rem;
+	padding: 1rem;
+	text-align: center;
+	height: 100vh;
+}
+
+
+.Opera{
+	grid-area: Opera;
+}
+
+.LoL{
+	grid-area: LoL;
+}
+
+.readMe{
+	grid-area: readMe;
+}
+
+.Crown{
+	grid-area: Crown;
+}
+
+/* Video */
+
+.desktop__header-video{
+	width: 55vw;
+}
+
+.desktop__body-video{
+
+	height: 50vh;
+}
+
+.Video{
+	grid-area: Video;
+}
+
+.Rick{
+	width: 50vw;
+	height: 45vh;
+	
+
+	
+}
+
