@@ -20,3 +20,26 @@ modalCloses.forEach((modalClose) =>{
 		})
 	})
 })
+
+
+// play rickroll
+
+const Rick = document.getElementById("Rick");
+document.getElementById("link__video").onclick = function() {
+	Rick.play();
+}
+
+document.getElementById("close__video").onclick = function() {
+	Rick.pause();
+	Rick.currentTime = 0;
+
+}
+
+// LoL
+
+const lol = document.getElementById('.LoL');
+
+function LoLAlert() {
+	alert("Tu crois que c'est le moment de jouer ?! \nApres avoir trouve le virus t'ira prendre une douche \nparce que la sa pue !");
+}
+

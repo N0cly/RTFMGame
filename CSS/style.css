@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-
+	
 }
 
 
@@ -129,6 +129,7 @@ body {
 	box-shadow: 10px 10px 2px rgba(33, 33, 33, 0.587);
 	background-color: #fff;
 	border-radius: .5rem;
+	height: 50vh;
 }
 
 .window__header{
@@ -139,7 +140,7 @@ body {
 	border-radius: .5rem .5rem 0 0;
 	padding: .75rem;
 	width: 50vw;
-
+	
 }
 
 .window__title{
@@ -155,7 +156,7 @@ body {
 	cursor: pointer;
 	outline: none;
 	display: inline-block;
-    text-align: center;
+	text-align: center;
 	margin: 0;
 	padding: 0;
 	border: none;
@@ -211,16 +212,26 @@ body {
 	list-style-type: none;
 	display: grid;
 	grid-template-areas: "Video . . . ."
-						 "Opera . . . ."
-						 "LoL . readMe . ."
-						 "Crown . . . .";
+	"Opera . . . ."
+	"LoL . readMe . ."
+	"Crown . . . .";
 	grid-gap: 1rem;
 	padding: 1rem;
 	text-align: center;
 	height: 100vh;
 }
 
-
+.icon__title{
+	color: rgb(255, 255, 255);
+	font-size: 1.25rem;
+	font-weight: 500;
+	text-shadow: 2px 2px 1px #333;
+	margin: 0 30% ;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 .Opera{
 	grid-area: Opera;
 }
@@ -238,14 +249,21 @@ body {
 }
 
 /* Video */
-
+.desktop__content-video{
+	height:55vh ;
+	width: 50Vw;
+}
 .desktop__header-video{
-	width: 55vw;
+	width: 100%;
 }
 
 .desktop__body-video{
-
+	
 	height: 50vh;
+}
+.desktop__body--video{
+	height: 100%;
+	width: 100%;
 }
 
 .Video{
@@ -253,10 +271,25 @@ body {
 }
 
 .Rick{
-	width: 50vw;
-	height: 45vh;
-	
-
-	
+	width: 40vw;
 }
 
+/* Opera */
+
+.textHidden{
+	color: #fff;
+}
+
+.text__content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 30vh;
+	width: 100%;
+}
+
+.text__content img {
+	width: 50%;
+	margin-top: 30px;
+}
