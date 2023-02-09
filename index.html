@@ -159,7 +159,7 @@
 					</div>
 
 
-					<div class="window__modal window__mdp active-modal ">
+					<!-- <div class="window__modal window__mdp active-modal " id="window__pwd">
 						<div class="window__content window__xp-files-content">
 							<div class="window__header window__xp-files-header">
 								<h3 class="window__title window__xp-files-title">explorateur de fichiers</h3>
@@ -177,9 +177,26 @@
 								</form>
 							</div>
 						</div>
-					</div>
+					</div> -->
 					
 					<div class="window__modal window__xp-files xp-files" id="xp-files">
+						<div class="window__content window__pwd" id="window__pwd">
+							<div class="window__header window__xp-files-header">
+								<h3 class="window__title window__xp-files-title">explorateur de fichiers</h3>
+								<div class="window__section-button window__xp-files-button">
+									<button class="window__button window__button-minimize window__xp-files-button--minimize">-</button>
+									<button class="window__button window__button-fullscreen window__xp-files-button--fullscreen">□</button>
+									<button class="window__button window__button-close window__xp-files-button--close">X</button>
+								</div>
+							</div>
+							<div class="window__body--mdp">
+							    <form id="login-form">
+									
+									<input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+									<input type="submit" value="Login" id="login-form-submit">
+								</form>
+							</div>
+						</div>
 						<div class="window__content window__xp-files-content">
 							<div class="window__header window__xp-files-header">
 								<h3 class="window__title window__xp-files-title">explorateur de fichiers</h3>

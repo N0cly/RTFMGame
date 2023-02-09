@@ -49,8 +49,8 @@ function LoLAlert() {
 const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
 const loginErrorMsg = document.getElementById("login-error-msg");
-const modalViewPwd = document.querySelectorAll('.window__mdp');
-const modalXp = document.querySelectorAll('.window__xp-files');
+const modalViewPwd = document.getElementById("window__pwd");
+// const modalXp = document.getElementById("xp-files");
 
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
@@ -59,8 +59,9 @@ loginButton.addEventListener("click", (e) => {
 
     if (password === "test") {
         // alert("You have successfully logged in.");
-        modalViewPwd.classList.remove('active-modal')
-		modalXp.classList.add('active-modal')
+        modalViewPwd.style.display = "none";
+		// modalViewPwd.classList.remove('window__modal')
+		// modalXp.classList.add('active-modal')
 
     } else {
         alert('Mot de passe incorrect ...')

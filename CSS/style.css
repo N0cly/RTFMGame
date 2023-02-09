@@ -208,6 +208,12 @@ body {
 
 /* MDP */
 
+.window__pwd{
+	position: absolute;
+	z-index: 2;
+
+}
+
 .window__body--mdp{
 	display: flex;
 	align-items: center;
