@@ -1,4 +1,4 @@
-/*=============== SERVICES MODAL ===============*/
+/*=============== WINDOWS MODAL ===============*/
 const modalViews = document.querySelectorAll('.window__modal'),
 	  modalBtns = document.querySelectorAll('.link__title'),
 	  modalCloses = document.querySelectorAll('.window__button-close')
@@ -66,4 +66,42 @@ loginButton.addEventListener("click", (e) => {
     } else {
         alert('Mot de passe incorrect ...')
     }
+})
+
+// Folder menu modal
+
+// const menu = document.getElementById('item__menu');
+// const icon = document.getElementById('item__content');
+// const item = document.getElementById('item__menu-option');
+
+// icon.onclick = function() {
+// 	menu.classList.add('active-menu');
+// }
+
+// item.onclick = function() {
+// 	menu.classList.remove('active-menu');
+// }
+
+// secon part-------------
+
+const modalMenu = document.querySelectorAll('.item__menu'),
+	  modalBtnsMenu = document.querySelectorAll('.item__content'),
+	  modalClosesMenu = document.querySelectorAll('.item__menu-option')
+
+let menu = function(modalClickMenu){
+	modalMenu[modalClickMenu].classList.add('active-menu')
+}
+
+modalBtnsMenu.forEach((modalBtnMenu, m) =>{
+	modalBtnMenu.addEventListener('click', () =>{
+		menu(m)
+	})
+})
+
+modalClosesMenu.forEach((modalCloseMenu) =>{
+	modalCloseMenu.addEventListener('click', () =>{
+		modalMenu.forEach((modalViewMenu) =>{
+			modalViewMenu.classList.remove('active-menu')
+		})
+	})
 })

@@ -166,18 +166,28 @@ a{
 .window__xp-files-body {
 	padding: 0;
 	margin: 0;
-	width: 50vw;
-	height: 40vh;
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	grid-template-rows: repeat(5, 1fr);
-	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: 0;
+	
 }
 
+.window__xp-files-header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgb(34, 34, 34);
+	border-radius: .5rem .5rem 0 0;
+	padding: .75rem;
+	width: 91vw;
+}
 
 /* gmail folder */
 .xp-files__item{
 	position: relative;
+	width: fit-content;
+	height: fit-content;
 }
 
 .item__content{
@@ -196,8 +206,26 @@ a{
 	font-size: 1.25rem;
 }
 
-.item__menu , .item__menu div{
+.item__menu {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.active-menu{
+	opacity: 1;
+	visibility: visible;
+}
+
+.item__menu div{
 	border: 1px solid #333;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px #333;
+	
+}
+
+.item__menu div:hover{
+	background-color: #333;
+	color: #fff;
 }
 
 .text__option{
@@ -208,7 +236,8 @@ a{
 	position: absolute;
 	bottom: -40%;
 	right: -20%;
-	width: 5vw;
+	width: min-content;
+
 }
 
 .item__menu-option{
