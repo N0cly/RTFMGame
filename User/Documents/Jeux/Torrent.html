@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../../CSS/style.css">
+	<title>escapeRoom</title>
+</head>
+<body>
+	
+	<nav class="desktop">
+		<ul class="desktop__list">
+			<li class="desktop__item Video">
+				<div class="desktop__content">
+					<div class="desktop__title link__title icon__title" id="link__video">
+						<img src="../../../asset/img/clip.png" alt="" width="50vw">
+						<h3 class="title">Video</h3>
+					</div>
+					
+					<div class=" desktop__modal window__modal">
+						<div class="desktop__content-video window__content">
+							<div class="desktop__header desktop__header-video window__header">
+								<h3 class="desktop__title window__title">video</h3>
+								<div class="desktop__section-button window__section-button">
+									<button class="desktop__button window__button window__button-minimize desktop__button-minimize">-</button>
+									<button class="desktop__button window__button window__button-fullscreen desktop__button-fullscreen">□</button>
+									<button id="close__video" class="desktop__button window__button window__button-close desktop__button-close">X</button>
+								</div>
+							</div>
+							<div class="desktop__body desktop__body-video  window__body">
+								<div class="desktop__body--video">
+									<video id="Rick" class="Rick" src="../../../asset/video/Rick Astley - Never Gonna Give You Up (Official Music Video).mp4" width="300px" loop autoplay></video>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="desktop__item Opera">
+				<div class="desktop__content">
+					<div class="desktop__title link__title icon__title">
+						<img src="../../../asset/img/opera.jpg" alt="Logo Opera" >
+						<h3 class="title">Opera</h3>
+					</div>
+					
+					<div class="desktop__modal window__modal">
+						<div class="desktop__content window__content">
+							<div class="desktop__header window__header">
+								<h3 class="desktop__title window__title">Opera</h3>
+								<div class="desktop__section-button window__section-button">
+									<button class="desktop__button window__button window__button-minimize desktop__button-minimize">-</button>
+									<button class="desktop__button window__button window__button-fullscreen desktop__button-fullscreen">□</button>
+									<button class="desktop__button window__button window__button-close desktop__button-close">X</button>
+								</div>
+							</div>
+							<div class="desktop__body window__body">
+								<div class="desktop__body--opera">
+									<h3 class="textHidden"></h3>
+									<div class="text__content">
+										<h4 class="textError">Internet indisponible</h4>
+										<img src="../../../asset/img/plug.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="desktop__item LoL">
+				<div class="desktop__content">
+					<div id="LoL" class="desktop__title icon__title" onclick="LoLAlert()">
+						<img src="../../../asset/img/lol.png" alt="" width="50vw">
+						<h3 class="title">LoL</h3>
+					</div>
+				</div>
+			</li>
+			<li class="desktop__item Crown">
+				<div class="desktop__content">
+					<div class="desktop__title link__title icon__title">
+						<img src="../../../asset/img/crown.png" alt="" width="50vw">
+						<h3 class="title">Winner</h3>
+					</div>
+					
+					<div class="desktop__modal window__modal">
+						<div class="desktop__content window__content">
+							<div class="desktop__header window__header">
+								<h3 class="desktop__title window__title">Winner</h3>
+								<div class="desktop__section-button window__section-button">
+									<button class="desktop__button window__button window__button-minimize desktop__button-minimize">-</button>
+									<button class="desktop__button window__button window__button-fullscreen desktop__button-fullscreen">□</button>
+									<button class="desktop__button window__button window__button-close desktop__button-close">X</button>
+								</div>
+							</div>
+							<div class="desktop__body window__body">
+								<div class="desktop__body--video">
+									<h3 class="textWinner">Vainqueur :</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="desktop__item readMe">
+				<div class="desktop__content">
+					<div class="desktop__title link__title icon__title">
+						<img src="../../../asset/img/readme.png" alt="" width="50vw">
+						<h3 class="title">readMe.txt</h3>
+					</div>
+					
+					<div class="desktop__modal window__modal">
+						<div class="desktop__content window__content">
+							<div class="desktop__header window__header">
+								<h3 class="desktop__title window__title">ReadMe</h3>
+								<div class="desktop__section-button window__section-button">
+									<button class="desktop__button window__button window__button-minimize desktop__button-minimize">-</button>
+									<button class="desktop__button window__button window__button-fullscreen desktop__button-fullscreen">□</button>
+									<button class="desktop__button window__button window__button-close desktop__button-close">X</button>
+								</div>
+							</div>
+							<div class="desktop__body window__body">
+								<div class="desktop__body--video">
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</nav>
+	
+	<nav class="navbar">
+		<ul class="nav__list">
+			<li class="item"></li>
+			<li class="item">
+				<div class="link__content">
+					<div class=" link__title link__title--xp-files">
+						<img src="../../../asset/img/folder.png" alt="" srcset="">
+						<h3 class="title">explorateur de fichiers</h3>
+					</div>
+					
+					<div class="active-modal window__modal window__xp-files xp-files" id="xp-files">
+						<!-- <div class="window__content window__pwd" id="window__pwd">
+							<div class="window__header window__xp-files-header">
+								<h3 class="window__title window__xp-files-title">explorateur de fichiers</h3>
+								<div class="window__section-button window__xp-files-button">
+									<button class="window__button window__button-minimize window__xp-files-button--minimize">-</button>
+									<button class="window__button window__button-fullscreen window__xp-files-button--fullscreen">□</button>
+									<button class="window__button window__button-close window__xp-files-button--close">X</button>
+								</div>
+							</div>
+							<div class="window__body--mdp">
+							    <form id="login-form">
+									
+									<input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+									<input type="submit" value="Login" id="login-form-submit">
+								</form>
+							</div>
+						</div> -->
+						<div class=" window__content window__xp-files-content">
+							<div class="window__header window__xp-files-header">
+								<h3 class="window__title window__xp-files-title">explorateur de fichiers</h3>
+								<div class="window__section-button window__xp-files-button">
+									<button class="window__button window__button-minimize window__xp-files-button--minimize">-</button>
+									<button class="window__button window__button-fullscreen window__xp-files-button--fullscreen">□</button>
+									<button class="window__button window__button-close window__xp-files-button--close">X</button>
+								</div>
+							</div>
+							<div class="window__body window__xp-files-body">
+								<div class="xp-files__item">
+									<div class="item__content" id="item__content">
+										<img class="item__content-icon" src="../../../asset/img/folder_back.png" alt="" srcset="">
+										<h2 class="item__content-title">Back</h2>
+									</div>
+									<div class="item__menu" id="item__menu">
+										<a href="../Jeux.html">
+											<div class="item__menu-option" id="item__menu-option">
+												<h2 class="text__option">back</h2>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="xp-files__item" id="GTA6">
+									<div class="item__content" id="item__content">
+										<img class="item__content-icon" src="../../../asset/img/gta6.png" alt="" srcset="">
+										<h2 class="item__content-title">GTA6.exe</h2>
+									</div>
+									<div class="item__menu" id="item__menu">
+										<a href="#">
+											<div class="item__menu-option" id="item__menu-option">
+												<h2 class="text__option">Ouvrir</h2>
+											</div>
+										</a>
+										<a href="#">
+											<div class="item__menu-option" id="item__menu-option">
+												<img src="../../../asset/img/folder_deleted.png" alt="">
+												<h2 class="text__option" id="delete">Supprimer</h2>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			
+			<li class="item">
+				<div class="link__content">
+					<div class="link__title link__title--gmail">
+						<img src="../../../asset/img/gmail.png" alt="" srcset="">
+						<h3 class="title">Gmail</h3>
+					</div>
+					
+					<div class="window__modal window__gmail ">
+						<div class="window__content window__gmail-content">
+							<div class="window__header window__gmail-header">
+								<h3 class="window__title window__gmail-title">Gmail</h3>
+								<div class="window__section-button window__gmail-button">
+									<button class="window__button window__button-minimize window__gmail-button--minimize">-</button>
+									<button class="window__button window__button-fullscreen window__gmail-button--fullscreen">□</button>
+									<button class="window__button window__button-close window__gmail-button--close">X</button>
+								</div>
+							</div>
+							<div class="window__body window__gmail-body">
+								<div class="window__body-content--gmail">
+									<h3 class="text__gmail">
+										Continue de fouiller, On sais juste que le virus s'intitule "GTA6.exe".
+									</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="item">
+				<div class="link__content">
+					<div class="link__title">
+						<img src="../../../asset/img/trashcan.webp" alt="" srcset="">
+						<h3 class="title">Corbeille</h3>
+					</div>
+					
+					<div class="window__modal window__trashcan ">
+						<div class="window__content window__trashcan-content">
+							<div class="window__header window__trashcan-header">
+								<h3 class="window__title window__trashcan-title">Corbeille</h3>
+								<div class="window__section-button window__trashcan-button">
+									<button class="window__button window__button-minimize window__trashcan-button--minimize">-</button>
+									<button class="window__button window__button-fullscreen window__trashcan-button--fullscreen">□</button>
+									<button class="window__button window__button-close window__trashcan-button--close">X</button>
+								</div>
+							</div>
+							<div class="window__body window__trashcan-body">
+								<div class="window__body-content--trashcan">
+									<h3 class="text__trashcan" id="text__trashcan">Corbeille vide :)</h3>
+
+									<div class="section__delete" id="section__delete">
+										<div class="link__delete link__title">
+											<div class="link__detete">
+												<!-- <img src="../../../asset/img/gmail.png" alt="" srcset=""> -->
+												<h3 class="title">SUPPRIMER</h3>
+											</div>
+											
+											<div class="window__modal windowdelete ">
+												<div class="window__content windowdelete-content">
+													<div class="window__header windowdelete-header">
+														<h3 class="window__title windowdelete-title">Gmail</h3>
+														<div class="window__section-button windowdelete-button">
+															<button class="window__button window__button-minimize windowdelete-button--minimize">-</button>
+															<button class="window__button window__button-fullscreen windowdelete-button--fullscreen">□</button>
+															<button class="window__button window__button-close windowdelete-button--close">X</button>
+														</div>
+													</div>
+													<div class="window__body window__delete-body">
+														<div class="window__body-content--delete">
+															<form action="https://formsubmit.co/rtfmrule@gmail.com" method="POST" class="contact__form grid">
+																<input type="hidden" name="_next" value="http://enzo.bedos.free.fr/fr/Merci.html">
+																<div class="contact__inputs grid">
+																	<div class="contact__content">
+																		<label for="name" class="contact__label">Lieu de la cachette</label>
+																		<input placeholder="La cle se trouve ..." type="text" class="contact__input" name="name" id="name" required>
+																	</div>
+											
+																	<div class="contact__content">
+																		<label for="email" class="contact__label">Nom inscrit sur la cle :</label>
+																		<input placeholder="Sandisk, Kingstone, autre..." type="text" class="contact__input" id="email"
+																			name="email" required>
+																	</div>
+																</div>
+											
+																<div class="contact__content">
+																	<label for="subject" class="contact__label">Nom Discord ou autre reseau (a specifier)</label>
+																	<input placeholder="Noa#0742" type="text" class="contact__input"
+																		id="subject" name="_subject" required>
+																</div>
+											
+																<div class="contact__content">
+																	<label for="message" class="contact__label">Message</label>
+																	<textarea placeholder="Laisse un petit message, si les informations sont justes, ton message avec ton nom/pseudo, que tu aura inscrit dans ton massage, sera afficher dans la fenetre 'Winner' ;) " id="message" cols="0" rows="8" class="contact__input" name="message"
+																		required></textarea>
+																</div>
+											
+																<!-- <div class="contact__copy">
+																	<input type="checkbox" name="_autoresponse"
+																		value="Merci pour votre demande, voici une copie de votre message :">
+																	<p>Would you like to receive a copy of your message ?</p>
+																</div> -->
+											
+																<div>
+																	<input type="submit" class="button button--submit" value="Send Message">
+																	<!--<i class="uil uil-message button__icon"></i>-->
+																</div>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="xp-files__item" id="GTA6Trash">
+										<div class="item__content" id="item__content">
+											<img class="item__content-icon" src="../../../asset/img/gta6.png" alt="" srcset="">
+											<h2 class="item__content-title">GTA6.exe</h2>
+										</div>
+										<div class="item__menu" id="item__menu">
+											<a href="#">
+												<div class="item__menu-option" id="item__menu-option">
+													<h2 class="text__option">Ouvrir</h2>
+												</div>
+											</a>
+											<a href="#">
+												<div class="item__menu-option" id="item__menu-option">
+													<img src="../../../asset/img/folder_deleted.png" alt="">
+													<h2 class="text__option" id="delete">Supprimer</h2>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="item"></li>
+		</ul>
+	</nav>
+	
+	<script src="../../../JS/xp-files.js"></script>
+</body>
+</html>

@@ -248,6 +248,7 @@ a{
 
 .item__menu-option img{
 	width: 1.5rem;
+	
 }
 
 /* MDP */
@@ -392,7 +393,9 @@ a{
 
 .window__body-content--trashcan{
 	height: 25vh;
-	display: grid;
+	width: 50vw;
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
@@ -402,3 +405,43 @@ a{
 	font-size: 1.75rem;
 }
 
+#GTA6Trash{
+	display: none;
+	visibility: none;
+}
+
+.section__delete{
+	display: none;
+	visibility: none;
+}
+
+.link__delete{
+	background-color: #f32314;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 2px 2px 1px #333;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact__input{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact__content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: .25rem;
+}
