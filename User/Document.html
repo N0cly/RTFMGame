@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./CSS/style.css">
+	<link rel="stylesheet" href="../CSS/style.css">
 	<title>escapeRoom</title>
 </head>
 <body>
@@ -14,7 +14,7 @@
 			<li class="desktop__item Video">
 				<div class="desktop__content">
 					<div class="desktop__title link__title icon__title" id="link__video">
-						<img src="./asset/img/clip.png" alt="" width="50vw">
+						<img src="../asset/img/clip.png" alt="" width="50vw">
 						<h3 class="title">Video</h3>
 					</div>
 					
@@ -30,7 +30,7 @@
 							</div>
 							<div class="desktop__body desktop__body-video  window__body">
 								<div class="desktop__body--video">
-									<video id="Rick" class="Rick" src="./asset/video/Rick Astley - Never Gonna Give You Up (Official Music Video).mp4" width="300px" loop autoplay></video>
+									<video id="Rick" class="Rick" src="../asset/video/Rick Astley - Never Gonna Give You Up (Official Music Video).mp4" width="300px" loop autoplay></video>
 								</div>
 							</div>
 						</div>
@@ -40,7 +40,7 @@
 			<li class="desktop__item Opera">
 				<div class="desktop__content">
 					<div class="desktop__title link__title icon__title">
-						<img src="./asset/img/opera.jpg" alt="Logo Opera" >
+						<img src="../asset/img/opera.jpg" alt="Logo Opera" >
 						<h3 class="title">Opera</h3>
 					</div>
 					
@@ -56,10 +56,10 @@
 							</div>
 							<div class="desktop__body window__body">
 								<div class="desktop__body--opera">
-									<h3 class="textHidden">Relis la doc :)</h3>
+									<h3 class="textHidden"></h3>
 									<div class="text__content">
 										<h4 class="textError">Internet indisponible</h4>
-										<img src="./asset/img/plug.png" alt="">
+										<img src="../asset/img/plug.png" alt="">
 									</div>
 								</div>
 							</div>
@@ -70,7 +70,7 @@
 			<li class="desktop__item LoL">
 				<div class="desktop__content">
 					<div id="LoL" class="desktop__title icon__title" onclick="LoLAlert()">
-						<img src="./asset/img/lol.png" alt="" width="50vw">
+						<img src="../asset/img/lol.png" alt="" width="50vw">
 						<h3 class="title">LoL</h3>
 					</div>
 				</div>
@@ -78,7 +78,7 @@
 			<li class="desktop__item Crown">
 				<div class="desktop__content">
 					<div class="desktop__title link__title icon__title">
-						<img src="./asset/img/crown.png" alt="" width="50vw">
+						<img src="../asset/img/crown.png" alt="" width="50vw">
 						<h3 class="title">Winner</h3>
 					</div>
 					
@@ -104,7 +104,7 @@
 			<li class="desktop__item readMe">
 				<div class="desktop__content">
 					<div class="desktop__title link__title icon__title">
-						<img src="./asset/img/readme.png" alt="" width="50vw">
+						<img src="../asset/img/readme.png" alt="" width="50vw">
 						<h3 class="title">readMe.txt</h3>
 					</div>
 					
@@ -136,12 +136,12 @@
 			<li class="item">
 				<div class="link__content">
 					<div class=" link__title link__title--xp-files">
-						<img src="./asset/img/folder.png" alt="" srcset="">
+						<img src="../asset/img/folder.png" alt="" srcset="">
 						<h3 class="title">explorateur de fichiers</h3>
 					</div>
 					
-					<div class="window__modal window__xp-files xp-files" id="xp-files">
-						<div class="window__content window__pwd" id="window__pwd">
+					<div class="active-modal window__modal window__xp-files xp-files" id="xp-files">
+						<!-- <div class="window__content window__pwd" id="window__pwd">
 							<div class="window__header window__xp-files-header">
 								<h3 class="window__title window__xp-files-title">explorateur de fichiers</h3>
 								<div class="window__section-button window__xp-files-button">
@@ -157,8 +157,8 @@
 									<input type="submit" value="Login" id="login-form-submit">
 								</form>
 							</div>
-						</div>
-						<div class="window__content window__xp-files-content">
+						</div> -->
+						<div class=" window__content window__xp-files-content">
 							<div class="window__header window__xp-files-header">
 								<h3 class="window__title window__xp-files-title">explorateur de fichiers</h3>
 								<div class="window__section-button window__xp-files-button">
@@ -170,18 +170,31 @@
 							<div class="window__body window__xp-files-body">
 								<div class="xp-files__item">
 									<div class="item__content" id="item__content">
-										<img class="item__content-icon" src="./asset/img/folder1.png" alt="" srcset="">
-										<h2 class="item__content-title">Documents</h2>
+										<img class="item__content-icon" src="../asset/img/folder_back.png" alt="" srcset="">
+										<h2 class="item__content-title">Back</h2>
 									</div>
 									<div class="item__menu" id="item__menu">
-										<a href="./User/Document.html">
+										<a href="../main.html">
+											<div class="item__menu-option" id="item__menu-option">
+												<h2 class="text__option">back</h2>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="xp-files__item">
+									<div class="item__content" id="item__content">
+										<img class="item__content-icon" src="../asset/img/folder1.png" alt="" srcset="">
+										<h2 class="item__content-title">Applications</h2>
+									</div>
+									<div class="item__menu" id="item__menu">
+										<a href="../User/Document.html">
 											<div class="item__menu-option" id="item__menu-option">
 												<h2 class="text__option">Ouvrir</h2>
 											</div>
 										</a>
 										<a href="#">
 											<div class="item__menu-option" id="item__menu-option">
-												<img src="./asset/img/folder_deleted.png" alt="" >
+												<img src="../asset/img/folder_deleted.png" alt="">
 												<h2 class="text__option">Supprimer</h2>
 											</div>
 										</a>
@@ -189,18 +202,18 @@
 								</div>
 								<div class="xp-files__item">
 									<div class="item__content" id="item__content">
-										<img class="item__content-icon" src="./asset/img/folder1.png" alt="" srcset="">
-										<h2 class="item__content-title">Videos</h2>
+										<img class="item__content-icon" src="../asset/img/folder1.png" alt="" srcset="">
+										<h2 class="item__content-title">Jeux</h2>
 									</div>
 									<div class="item__menu" id="item__menu">
-										<a href="./User/Video.html">
+										<a href="../User/Documents/Jeux.html">
 											<div class="item__menu-option" id="item__menu-option">
 												<h2 class="text__option">Ouvrir</h2>
 											</div>
 										</a>
 										<a href="#">
 											<div class="item__menu-option" id="item__menu-option">
-												<img src="./asset/img/folder_deleted.png" alt="">
+												<img src="../asset/img/folder_deleted.png" alt="">
 												<h2 class="text__option">Supprimer</h2>
 											</div>
 										</a>
@@ -208,7 +221,7 @@
 								</div>
 								<div class="xp-files__item">
 									<div class="item__content" id="item__content">
-										<img class="item__content-icon" src="./asset/img/folder1.png" alt="" srcset="">
+										<img class="item__content-icon" src="../asset/img/folder1.png" alt="" srcset="">
 										<h2 class="item__content-title">Images</h2>
 									</div>
 									<div class="item__menu" id="item__menu">
@@ -219,7 +232,7 @@
 										</a>
 										<a href="#">
 											<div class="item__menu-option" id="item__menu-option">
-												<img src="./asset/img/folder_deleted.png" alt="">
+												<img src="../asset/img/folder_deleted.png" alt="">
 												<h2 class="text__option">Supprimer</h2>
 											</div>
 										</a>
@@ -227,7 +240,7 @@
 								</div>
 								<div class="xp-files__item">
 									<div class="item__content" id="item__content">
-										<img class="item__content-icon" src="./asset/img/folder1.png" alt="" srcset="">
+										<img class="item__content-icon" src="../asset/img/folder1.png" alt="" srcset="">
 										<h2 class="item__content-title">Rendu 3D</h2>
 									</div>
 									<div class="item__menu" id="item__menu">
@@ -238,7 +251,7 @@
 										</a>
 										<a href="#">
 											<div class="item__menu-option" id="item__menu-option">
-												<img src="./asset/img/folder_deleted.png" alt="">
+												<img src="../asset/img/folder_deleted.png" alt="">
 												<h2 class="text__option">Supprimer</h2>
 											</div>
 										</a>
@@ -246,7 +259,7 @@
 								</div>
 								<div class="xp-files__item">
 									<div class="item__content" id="item__content">
-										<img class="item__content-icon" src="./asset/img/folder1.png" alt="" srcset="">
+										<img class="item__content-icon" src="../asset/img/folder1.png" alt="" srcset="">
 										<h2 class="item__content-title">Pac-man</h2>
 									</div>
 									<div class="item__menu" id="item__menu">
@@ -257,7 +270,7 @@
 										</a>
 										<a href="#">
 											<div class="item__menu-option" id="item__menu-option">
-												<img src="./asset/img/folder_deleted.png" alt="">
+												<img src="../asset/img/folder_deleted.png" alt="">
 												<h2 class="text__option">Supprimer</h2>
 											</div>
 										</a>
@@ -272,7 +285,7 @@
 			<li class="item">
 				<div class="link__content">
 					<div class="link__title link__title--gmail">
-						<img src="./asset/img/gmail.png" alt="" srcset="">
+						<img src="../asset/img/gmail.png" alt="" srcset="">
 						<h3 class="title">Gmail</h3>
 					</div>
 					
@@ -289,7 +302,7 @@
 							<div class="window__body window__gmail-body">
 								<div class="window__body-content--gmail">
 									<h3 class="text__gmail">
-										Comme un fidele avec son texte sacre, l'informaticien relis sa doc pour retrouver son droit chemin, tu devrais faire pareil.
+										Continue de fouiller, On sais juste que le virus s'intitule "GTA6.exe".
 									</h3>
 								</div>
 							</div>
@@ -300,7 +313,7 @@
 			<li class="item">
 				<div class="link__content">
 					<div class="link__title">
-						<img src="./asset/img/trashcan.webp" alt="" srcset="">
+						<img src="../asset/img/trashcan.webp" alt="" srcset="">
 						<h3 class="title">Corbeille</h3>
 					</div>
 					
@@ -327,6 +340,6 @@
 		</ul>
 	</nav>
 	
-	<script src="./JS/script.js"></script>
+	<script src="../JS/xp-files.js"></script>
 </body>
 </html>

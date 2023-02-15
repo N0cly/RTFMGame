@@ -241,7 +241,13 @@ a{
 }
 
 .item__menu-option{
+	display: flex;
+	align-items: center;
 	padding: .25rem;
+}
+
+.item__menu-option img{
+	width: 1.5rem;
 }
 
 /* MDP */
@@ -274,14 +280,14 @@ a{
 .desktop__list{
 	list-style-type: none;
 	display: grid;
-	grid-template-areas: "Video . . . ."
+	grid-template-areas:
+	"Video . . . ."
 	"Opera . . . ."
 	"LoL . readMe . ."
 	"Crown . . . .";
-	grid-gap: 1rem;
-	padding: 1rem;
 	text-align: center;
-	height: 100vh;
+	height: 90vh;
+	align-items: center;
 }
 
 .icon__title{
@@ -289,7 +295,6 @@ a{
 	font-size: 1.25rem;
 	font-weight: 500;
 	text-shadow: 2px 2px 1px #333;
-	margin: 0 30% ;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
