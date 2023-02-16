@@ -57,7 +57,7 @@ loginButton.addEventListener("click", (e) => {
     
     const password = loginForm.password.value;
 
-    if (password === "test") {
+    if (password === "RTFM") {
         // alert("You have successfully logged in.");
         modalViewPwd.style.display = "none";
 		// modalViewPwd.classList.remove('window__modal')
