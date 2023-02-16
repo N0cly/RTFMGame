@@ -481,12 +481,12 @@ a{
 }
 
 form{
-	color: #fff;
+	color:#fff;
 }
 
 .text__final{
 	color: #fff;
 	font-size: xx-large;
 	text-shadow: 1px 1px 1px #333;
-	backdrop-filter: blur(4px);
+	backdrop-filter: blur(4px); 
 }
