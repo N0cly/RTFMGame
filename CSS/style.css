@@ -93,6 +93,7 @@ a{
 }
 
 /* Active modal */
+
 .active-modal{
 	opacity: 1;
 	visibility: visible;
@@ -103,7 +104,8 @@ a{
 	box-shadow: 10px 10px 2px rgba(33, 33, 33, 0.587);
 	background-color: #fff;
 	border-radius: .5rem;
-	height: 50vh;
+	width: 80vw;
+	height: 75vh;
 }
 
 .window__header{
@@ -113,7 +115,7 @@ a{
 	background-color: rgb(34, 34, 34);
 	border-radius: .5rem .5rem 0 0;
 	padding: .75rem;
-	width: 50vw;
+	width:auto;
 	
 }
 
@@ -163,6 +165,16 @@ a{
 
 
 
+
+.window__xp-files-header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgb(34, 34, 34);
+	border-radius: .5rem .5rem 0 0;
+	padding: .75rem;
+	width: auto;
+}
 .window__xp-files-body {
 	padding: 0;
 	margin: 0;
@@ -173,22 +185,9 @@ a{
 	
 }
 
-.window__xp-files-header{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	background-color: rgb(34, 34, 34);
-	border-radius: .5rem .5rem 0 0;
-	padding: .75rem;
-	width: 91vw;
-}
-
 /* gmail folder */
-.xp-files__item{
-	position: relative;
-	width: fit-content;
-	height: fit-content;
-}
+
+
 
 .item__content{
 	display: flex;
@@ -367,7 +366,7 @@ a{
 
 .window__gmail-content{
 	background-color: #333;
-	height: 40vh;
+
 }
 
 .window__body-content--gmail{
@@ -387,21 +386,23 @@ a{
 
 /* Trashcan */
 
-.window__trashcan-content{
-	height: 40vh;
-}
 
-.window__body-content--trashcan{
+
+/* .window__body-content--trashcan{
 	height: 25vh;
 	width: 50vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-}
+} */
 
 .text__trashcan{
-	text-align:justify;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	text-align:center;
 	font-size: 1.75rem;
 }
 
@@ -473,12 +474,7 @@ a{
 	text-align: left;
 }
 
-.final{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-}
+
 
 form{
 	color:#fff;
@@ -489,4 +485,21 @@ form{
 	font-size: xx-large;
 	text-shadow: 1px 1px 1px #333;
 	backdrop-filter: blur(4px); 
+}
+.text__explic1{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+}
+.text__explic2{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	padding: 1rem;
 }
