@@ -15,4 +15,4 @@ https://n0cly.github.io/RTFMGame/
  - `index.html` => Landing page du site web.
 
 
-###### par  BEDOS Enzo
+###### par  BEDOS Enzo et AMETLLER Thibault
